@@ -1,0 +1,75 @@
+{
+  "app": {
+    "name": "TubeRank AI",
+    "tagline": "YouTube SEO assistant",
+    "version": "1.0.0"
+  },
+  "openrouter": {
+    "api_url": "https://openrouter.ai/api/v1/chat/completions",
+    "default_model": "openai/gpt-4o-mini",
+    "models": [
+      { "id": "openai/gpt-4o-mini", "label": "GPT-4o mini (fast, low cost)" },
+      { "id": "google/gemini-2.0-flash-001", "label": "Gemini 2.0 Flash (fast)" },
+      { "id": "anthropic/claude-3.5-haiku", "label": "Claude 3.5 Haiku (balanced)" },
+      { "id": "meta-llama/llama-3.3-70b-instruct", "label": "Llama 3.3 70B (open model)" },
+      { "id": "deepseek/deepseek-chat", "label": "DeepSeek Chat (low cost)" }
+    ],
+    "temperature": 0.7,
+    "timeout_seconds": 60,
+    "max_retries": 1
+  },
+  "limits": {
+    "min_input_chars": 10,
+    "max_input_chars": 12000,
+    "rate_limit_per_minute": 40
+  },
+  "sections": {
+    "titles": { "max_tokens": 1200 },
+    "description": { "max_tokens": 1800 },
+    "keywords": { "max_tokens": 1500 },
+    "tags_hashtags": { "max_tokens": 1200 },
+    "thumbnails": { "max_tokens": 2200 },
+    "shorts": { "max_tokens": 3000 },
+    "analyze": { "max_tokens": 1500 }
+  },
+  "categories": [
+    "Education",
+    "Technology",
+    "Gaming",
+    "Entertainment",
+    "Vlog / Lifestyle",
+    "Business & Finance",
+    "Health & Fitness",
+    "Cooking & Food",
+    "Travel",
+    "Music",
+    "News & Commentary",
+    "Science",
+    "Beauty & Fashion",
+    "Sports",
+    "How-to & DIY",
+    "Other"
+  ],
+  "languages": [
+    "English",
+    "Urdu",
+    "Hindi",
+    "Arabic",
+    "Spanish",
+    "French",
+    "German",
+    "Portuguese",
+    "Indonesian",
+    "Turkish"
+  ],
+  "features": {
+    "titles": true,
+    "description": true,
+    "keywords": true,
+    "tags": true,
+    "hashtags": true,
+    "thumbnails": true,
+    "shorts": true,
+    "seo_score": true
+  }
+}
